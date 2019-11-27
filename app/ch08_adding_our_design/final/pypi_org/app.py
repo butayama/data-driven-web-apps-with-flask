@@ -13,9 +13,9 @@ def main():
 
 
 def register_blueprints():
-    from pypi_org.views import home_views
-    from pypi_org.views import package_views
-    from pypi_org.views import cms_views
+    from views import home_views
+    from views import package_views
+    from views import cms_views
 
     app.register_blueprint(package_views.blueprint)
     app.register_blueprint(home_views.blueprint)
